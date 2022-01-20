@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		B9151F5527990D7500B82153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9151F5427990D7500B82153 /* AppDelegate.swift */; };
 		B9151F5727990D7500B82153 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9151F5627990D7500B82153 /* SceneDelegate.swift */; };
-		B9151F5927990D7500B82153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9151F5827990D7500B82153 /* ViewController.swift */; };
 		B9151F5C27990D7500B82153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9151F5A27990D7500B82153 /* Main.storyboard */; };
 		B9151F5E27990D7700B82153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9151F5D27990D7700B82153 /* Assets.xcassets */; };
 		B9151F6127990D7700B82153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9151F5F27990D7700B82153 /* LaunchScreen.storyboard */; };
+		B92824072799150B0098A7E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92824062799150B0098A7E0 /* ViewController.swift */; };
+		B928240927991CEE0098A7E0 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B928240827991CEE0098A7E0 /* Calculate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9151F5127990D7500B82153 /* KotaKadai2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotaKadai2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9151F5427990D7500B82153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9151F5627990D7500B82153 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B9151F5827990D7500B82153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9151F5B27990D7500B82153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9151F5D27990D7700B82153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9151F6027990D7700B82153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9151F6227990D7700B82153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B92824062799150B0098A7E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B928240827991CEE0098A7E0 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		B9151F5327990D7500B82153 /* KotaKadai2 */ = {
 			isa = PBXGroup;
 			children = (
-				B9151F5427990D7500B82153 /* AppDelegate.swift */,
-				B9151F5627990D7500B82153 /* SceneDelegate.swift */,
-				B9151F5827990D7500B82153 /* ViewController.swift */,
-				B9151F5A27990D7500B82153 /* Main.storyboard */,
+				B9151F6B2799134100B82153 /* Model */,
+				B9151F692799131F00B82153 /* View */,
+				B9151F6A2799133500B82153 /* Controller */,
 				B9151F5D27990D7700B82153 /* Assets.xcassets */,
 				B9151F5F27990D7700B82153 /* LaunchScreen.storyboard */,
 				B9151F6227990D7700B82153 /* Info.plist */,
 			);
 			path = KotaKadai2;
+			sourceTree = "<group>";
+		};
+		B9151F692799131F00B82153 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9151F5A27990D7500B82153 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9151F6A2799133500B82153 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9151F5427990D7500B82153 /* AppDelegate.swift */,
+				B9151F5627990D7500B82153 /* SceneDelegate.swift */,
+				B92824062799150B0098A7E0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9151F6B2799134100B82153 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B928240827991CEE0098A7E0 /* Calculate.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +104,7 @@
 				B9151F4D27990D7500B82153 /* Sources */,
 				B9151F4E27990D7500B82153 /* Frameworks */,
 				B9151F4F27990D7500B82153 /* Resources */,
+				B9151F682799125700B82153 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,12 +161,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B9151F682799125700B82153 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9151F4D27990D7500B82153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9151F5927990D7500B82153 /* ViewController.swift in Sources */,
+				B92824072799150B0098A7E0 /* ViewController.swift in Sources */,
+				B928240927991CEE0098A7E0 /* Calculate.swift in Sources */,
 				B9151F5527990D7500B82153 /* AppDelegate.swift in Sources */,
 				B9151F5727990D7500B82153 /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +355,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +383,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
