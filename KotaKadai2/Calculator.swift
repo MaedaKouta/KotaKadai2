@@ -8,17 +8,25 @@
 import Foundation
 import CoreText
 
-class Calculate {
+class Calculator {
 
-    func calculate(index: Int, num1: Float, num2: Float) -> String {
-        if index == 0 {
-            return plus(num1: num1, num2: num2)
-        } else if index == 1 {
-            return minus(num1: num1, num2: num2)
-        } else if index == 2 {
-            return times(num1: num1, num2: num2)
-        } else {
-            return division(num1: num1, num2: num2)
+    enum Calculation {
+        case addition
+        case subtraction
+        case multiplication
+        case division
+    }
+
+    func calculate(calculation: Calculation, num1: Float, num2: Float) -> String {
+        switch calculation {
+            case .addition:
+                return plus(num1: num1, num2: num2)
+            case .subtraction:
+                return minus(num1: num1, num2: num2)
+            case .multiplication:
+                return times(num1: num1, num2: num2)
+            case .division:
+                return division(num1: num1, num2: num2)
         }
     }
 

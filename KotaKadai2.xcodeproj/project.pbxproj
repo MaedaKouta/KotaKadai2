@@ -13,7 +13,7 @@
 		B9151F5E27990D7700B82153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9151F5D27990D7700B82153 /* Assets.xcassets */; };
 		B9151F6127990D7700B82153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9151F5F27990D7700B82153 /* LaunchScreen.storyboard */; };
 		B92824072799150B0098A7E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92824062799150B0098A7E0 /* ViewController.swift */; };
-		B928240927991CEE0098A7E0 /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B928240827991CEE0098A7E0 /* Calculate.swift */; };
+		B928240927991CEE0098A7E0 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B928240827991CEE0098A7E0 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		B9151F6027990D7700B82153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9151F6227990D7700B82153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92824062799150B0098A7E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B928240827991CEE0098A7E0 /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		B928240827991CEE0098A7E0 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		B9151F6B2799134100B82153 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B928240827991CEE0098A7E0 /* Calculate.swift */,
+				B928240827991CEE0098A7E0 /* Calculator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -105,6 +105,7 @@
 				B9151F4E27990D7500B82153 /* Frameworks */,
 				B9151F4F27990D7500B82153 /* Resources */,
 				B9151F682799125700B82153 /* ShellScript */,
+				B928240A279964A70098A7E0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -179,6 +180,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		B928240A279964A70098A7E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -187,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B92824072799150B0098A7E0 /* ViewController.swift in Sources */,
-				B928240927991CEE0098A7E0 /* Calculate.swift in Sources */,
+				B928240927991CEE0098A7E0 /* Calculator.swift in Sources */,
 				B9151F5527990D7500B82153 /* AppDelegate.swift in Sources */,
 				B9151F5727990D7500B82153 /* SceneDelegate.swift in Sources */,
 			);
